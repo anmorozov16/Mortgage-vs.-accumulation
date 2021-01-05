@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Расчет</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap-4.3.1-dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/global.css' %}">
+    <link rel="stylesheet" href="{% static 'css/settlement_rate.css' %}">
+</head>
+<body>
+<div>
+    <div class="datafield">
+        <div>
+            <p>Стоимость жилья</p>
+            <input type="number" min="1" placeholder="Стоимость жилья">
+        </div>
+        <div>
+            <p>Первоначальный взнос</p>
+            <input type="number" min="0" placeholder="Первоначальный взнос">
+        </div>
+        <div>
+            <p>Кредитная ставка</p>
+            <input type="number" min="0" placeholder="Кредитная ставка">
+        </div>
+    </div>
+    <div>
+    </div>
+</div>
+</body>
+</html>
