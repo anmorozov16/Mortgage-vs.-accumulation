@@ -9,20 +9,22 @@
     <link rel="stylesheet" href="{% static 'css/settlement_rate.css' %}">
 </head>
 <body>
+<object type="image/svg+xml" data="static/svg/background.svg" class="hor-center" style="position: fixed; top: 60%">
+</object>
 <div class="block hor-center">
     <div class="flatten">
         <div class="datafield">
             <div class="ver-flatten">
                 <p>Стоимость жилья</p>
-                <input id="Housing cost" type="number" min="1" placeholder="Стоимость жилья">
+                <input value="1000000" id="Housing cost" type="number" min="1" placeholder="Стоимость жилья">
             </div>
             <div class="ver-flatten">
-                <p>Первоначальный взнос</p>
-                <input type="number" min="0" placeholder="Первоначальный взнос">
+                <p>Доход</p>
+                <input value="100000" id="Income" type="number" min="0" placeholder="Доход">
             </div>
             <div class="ver-flatten">
-                <p>Кредитная ставка</p>
-                <input type="number" min="0" placeholder="Кредитная ставка">
+                <p>Ипоточеная ставка</p>
+                <input value="7" id="Mortgage rate doc" type="number" min="0" placeholder="Ипоточеная ставка">
             </div>
         </div>
         <div class="chart_field">
