@@ -24,10 +24,14 @@
 }
 
 .block {
+    border: 1px solid #cecece;
     padding: 20px;
     background-color: #fff;
-    width: 70%;
-    margin-top: 140px;
+    width: 90%;
+    max-width: 1100px;
+    top: 140px;
+    position: relative;
+    border-radius: 5px;
 }
 
 .info-bar table {

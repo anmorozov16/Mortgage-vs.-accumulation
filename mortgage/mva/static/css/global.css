@@ -27,6 +27,16 @@
     flex-direction: column;
 }
 
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 body {
-    background-color: #efefef;
+    background: radial-gradient(#fff, #fff, #eee);
+}
+
+.background {
+    position: fixed;
+    top: 60%;
 }
