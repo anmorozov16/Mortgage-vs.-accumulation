@@ -9,23 +9,63 @@
     <link rel="stylesheet" href="{% static 'css/settlement_rate.css' %}">
 </head>
 <body>
-<div>
-    <div class="datafield">
-        <div>
-            <p>Стоимость жилья</p>
-            <input type="number" min="1" placeholder="Стоимость жилья">
+<div class="block hor-center">
+    <div class="flatten">
+        <div class="datafield">
+            <div class="ver-flatten">
+                <p>Стоимость жилья</p>
+                <input type="number" min="1" placeholder="Стоимость жилья">
+            </div>
+            <div class="ver-flatten">
+                <p>Первоначальный взнос</p>
+                <input type="number" min="0" placeholder="Первоначальный взнос">
+            </div>
+            <div class="ver-flatten">
+                <p>Кредитная ставка</p>
+                <input type="number" min="0" placeholder="Кредитная ставка">
+            </div>
         </div>
-        <div>
-            <p>Первоначальный взнос</p>
-            <input type="number" min="0" placeholder="Первоначальный взнос">
-        </div>
-        <div>
-            <p>Кредитная ставка</p>
-            <input type="number" min="0" placeholder="Кредитная ставка">
+        <div class="chart_field">
+            <canvas id="chart"></canvas>
         </div>
     </div>
-    <div>
+
+    <hr align="center" width="100%" size="2" color=" #e6e6e6">
+
+    <div class="info-bar">
+        <table>
+            <tr>
+                <td>
+                    <div class="flatten">
+                        <p>infa 1:</p>
+                        <p>000</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="flatten">
+                        <p>infa 2:</p>
+                        <p>000</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="flatten">
+                        <p>infa 3:</p>
+                        <p>000</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="flatten">
+                        <p>infa 4:</p>
+                        <p>000</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
+<script src="{% static 'js/chart_field.js' %}"></script>
 </html>

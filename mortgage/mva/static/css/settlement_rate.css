@@ -1,3 +1,41 @@
 .datafield {
-    width: 50%;
+    width: 40%;
+}
+
+.datafield input {
+    height: 53px;
+    padding: 0 10px;
+    font-size: 23px;
+    margin-bottom: 36px;
+    border: 1px solid #188fec;
+    border-radius: 5px;
+}
+
+.datafield p {
+    color: #9a9a9a;
+    margin-bottom: 4px;
+}
+
+.chart_field {
+    width: 59%;
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 1px solid #e6e6e6;
+}
+
+.block {
+    padding: 20px;
+    background-color: #fff;
+    width: 70%;
+    margin-top: 140px;
+}
+
+.info-bar table {
+    width: 100%;
+    font-size: 23px;
+    color: #666;
+}
+
+.info-bar p {
+    margin-left: 10px;
 }
