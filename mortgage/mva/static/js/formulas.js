@@ -31,7 +31,8 @@ function mortgage(income, mortgage_sum, rate, term, spendings) {
       return item - cumsum_spendings[index];})
 
 
-    return cumsum_profit_final
+    return {'Profit array': cumsum_profit_final, 'Profit': profit,
+            'Mortgage monthly payment': annual_pay, 'Overpayment': overpayment}
 }
 
 function accumulation(income, apt_sum, inflation_rate, term, spendings) {
@@ -53,6 +54,6 @@ function accumulation(income, apt_sum, inflation_rate, term, spendings) {
     var cumsum_profit_accum = cumsum_accum.map(function(item, index) {
           return item - cumsum_FV[index];})
 
-    return  cumsum_profit_accum
+    return  {'Profit array': cumsum_profit_accum, 'Profit': accum}
 }
 
