@@ -55,4 +55,7 @@
     height: 16px;
     left: 9px;
     top: 5px;
+    background-image: url("/static/images/toolbar.png");
+    background-position: center center;
+    background-size: 16px;
 }

@@ -48,3 +48,32 @@ body {
 .accumulation {
     color: #8bc34a;
 }
+
+.tooltipv2 .tooltiptext {
+    visibility: hidden;
+    width: 170px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 150%;
+}
+
+.tooltipv2 .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 13px;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+.tooltipv2:hover .tooltiptext {
+    visibility: visible;
+}
