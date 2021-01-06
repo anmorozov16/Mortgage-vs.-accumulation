@@ -48,3 +48,11 @@
 .gap {
     width: 12px;
 }
+
+.infobar {
+    width: 16px;
+    position: relative;
+    height: 16px;
+    left: 9px;
+    top: 5px;
+}

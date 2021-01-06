@@ -15,36 +15,57 @@
     <div class="flatten">
         <div class="datafield">
             <div class="ver-flatten">
-                <p>Стоимость жилья</p>
+                <div class="flatten">
+                    <p>Стоимость жилья</p>
+                    <img class="infobar" src="static/images/toolbar.png"  data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                </div>
                 <input value="1 000 000" id="Housing cost" type="text" min="1" placeholder="Стоимость жилья">
             </div>
             <div class="ver-flatten">
-                <p>Доход</p>
+                <div class="flatten">
+                    <p>Доход</p>
+                    <img class="infobar" src="static/images/toolbar.png"  data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                </div>
                 <input value="100 000" id="Income" type="text" min="0" placeholder="Доход">
             </div>
             <div class="ver-flatten">
-                <p>Период (лет)</p>
+                <div class="flatten">
+                    <p>Период (лет)</p>
+                    <img class="infobar" src="static/images/toolbar.png"  data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                </div>
                 <input value="10" id="Term" type="number" min="0" max="100" placeholder="Период">
             </div>
             <div class="flatten">
                 <div>
-                    <p>Расходы (ипотека)</p>
+                    <div class="flatten">
+                        <p>Расходы (ипотека)</p>
+                        <img class="infobar" src="static/images/toolbar.png"  data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                    </div>
                     <input class="mortgage" value="5 000" id="Spendings mortgage" type="text" min="0" placeholder="Расходы">
                 </div>
                 <div class="gap"></div>
                 <div>
-                    <p>Расходы (аренда)</p>
+                    <div class="flatten">
+                        <p>Расходы (аренда)</p>
+                        <img class="infobar" src="static/images/toolbar.png"  data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                    </div>
                     <input class="accumulation" value="25 000" id="Spendings accumulation" type="text" min="0" placeholder="Расходы">
                 </div>
             </div>
             <div class="flatten">
                 <div class="ver-flatten">
-                    <p>Ипоточеная ставка %</p>
+                    <div class="flatten">
+                        <p>Ипоточеная ставка %</p>
+                        <img class="infobar" src="static/images/toolbar.png"  data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                    </div>
                     <input class="mortgage" value="7" id="Mortgage rate" type="number" min="0" placeholder="Ипоточеная ставка">
                 </div>
                 <div class="gap"></div>
                 <div>
-                    <p>Инфляция %</p>
+                    <div class="flatten">
+                        <p>Инфляция %</p>
+                        <img class="infobar" src="static/images/toolbar.png"  data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                    </div>
                     <input class="accumulation" value="10" id="Inflation rate" type="number" min="0" placeholder="инфляция">
                 </div>
             </div>
@@ -91,7 +112,7 @@
 </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
-<script src="{%static 'js/formulas.js' %}"></script>
+<script src="{% static 'js/formulas.js' %}"></script>
 <script src="{% static 'js/chart_field.js' %}"></script>
 <script src="{% static 'js/eventControll.js' %}"></script>
 </html>
