@@ -4,6 +4,7 @@
 
 .datafield input {
     height: 53px;
+    width: 100%;
     padding: 0 10px;
     font-size: 23px;
     margin-bottom: 36px;
@@ -42,4 +43,8 @@
 
 .info-bar p {
     margin-left: 10px;
+}
+
+.gap {
+    width: 12px;
 }

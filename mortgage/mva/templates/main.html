@@ -5,8 +5,8 @@
     <title>Расчет</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'bootstrap-4.3.1-dist/css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'css/global.css' %}">
     <link rel="stylesheet" href="{% static 'css/settlement_rate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/global.css' %}">
 </head>
 <body>
 <object type="image/svg+xml" data="static/svg/background.svg" class="hor-center" style="position: fixed; top: 60%">
@@ -16,15 +16,37 @@
         <div class="datafield">
             <div class="ver-flatten">
                 <p>Стоимость жилья</p>
-                <input value="1000000" id="Housing cost" type="number" min="1" placeholder="Стоимость жилья">
+                <input value="1 000 000" id="Housing cost" type="text" min="1" placeholder="Стоимость жилья">
             </div>
             <div class="ver-flatten">
                 <p>Доход</p>
-                <input value="100000" id="Income" type="number" min="0" placeholder="Доход">
+                <input value="100 000" id="Income" type="text" min="0" placeholder="Доход">
             </div>
             <div class="ver-flatten">
-                <p>Ипоточеная ставка</p>
-                <input value="7" id="Mortgage rate doc" type="number" min="0" placeholder="Ипоточеная ставка">
+                <p>Период (лет)</p>
+                <input value="10" id="Term" type="number" min="0" max="100" placeholder="Период">
+            </div>
+            <div class="flatten">
+                <div>
+                    <p>Расходы (ипотека)</p>
+                    <input class="mortgage" value="5 000" id="Spendings mortgage" type="text" min="0" placeholder="Расходы">
+                </div>
+                <div class="gap"></div>
+                <div>
+                    <p>Расходы (аренда)</p>
+                    <input class="accumulation" value="25 000" id="Spendings accumulation" type="text" min="0" placeholder="Расходы">
+                </div>
+            </div>
+            <div class="flatten">
+                <div class="ver-flatten">
+                    <p>Ипоточеная ставка %</p>
+                    <input class="mortgage" value="7" id="Mortgage rate" type="number" min="0" placeholder="Ипоточеная ставка">
+                </div>
+                <div class="gap"></div>
+                <div>
+                    <p>Инфляция %</p>
+                    <input class="accumulation" value="10" id="Inflation rate" type="number" min="0" placeholder="инфляция">
+                </div>
             </div>
         </div>
         <div class="chart_field">
@@ -38,29 +60,29 @@
         <table>
             <tr>
                 <td>
-                    <div class="flatten">
-                        <p>infa 1:</p>
-                        <p>000</p>
+                    <div class="mortgage flatten">
+                        <p>Profit Mortgage:</p>
+                        <p id="profit mortgage">000</p>
                     </div>
                 </td>
                 <td>
-                    <div class="flatten">
-                        <p>infa 2:</p>
-                        <p>000</p>
+                    <div class="mortgage flatten">
+                        <p>Mortgage monthly payment:</p>
+                        <p id="mortgage monthly payment">000</p>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <div class="flatten">
-                        <p>infa 3:</p>
-                        <p>000</p>
+                    <div class="accumulation flatten">
+                        <p>Profit Accumulation:</p>
+                        <p id="profit accumulation">000</p>
                     </div>
                 </td>
                 <td>
-                    <div class="flatten">
-                        <p>infa 4:</p>
-                        <p>000</p>
+                    <div class="mortgage flatten">
+                        <p>Overpayment:</p>
+                        <p id="overpayment">000</p>
                     </div>
                 </td>
             </tr>
